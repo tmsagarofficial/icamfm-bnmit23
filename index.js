@@ -31,3 +31,5 @@ function handleScrollPrev(direction) {
 
 next.addEventListener("click", handleScrollNext);
 prev.addEventListener("click", handleScrollPrev);
+
+
