@@ -385,7 +385,19 @@ p {
   font-family: "Montserrat", sans-serif;
   font-weight: 900 !important;
 }
+.Commitee > img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 190px;
+  top: 90px;
+  width: 80%;
+}
 
+.Commitee {
+  height: 300vh;
+}
 @media (max-width: 600px) {
   .image-container img {
     width: 100%;
