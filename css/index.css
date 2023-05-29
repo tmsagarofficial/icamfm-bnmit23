@@ -123,10 +123,11 @@ body {
   transform: translateY(0) rotate(45deg);
 }
 
-section {
+/* section {
   height: 100vh;
   width: 100%;
-}
+} */
+
 .logo1 {
   display: flex;
   justify-content: space-between;
@@ -398,7 +399,7 @@ p {
 .Commitee {
   height: 300vh;
 }
-@media (max-width: 600px) {
+@media (max-width: 440px) {
   .image-container img {
     width: 100%;
     height: 525px;
@@ -457,27 +458,30 @@ p {
   .slider:before {
     display: none;
   }
+  .Commitee > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 0px;
+    top: 90px;
+    width: 380px;
+  }
 }
 
-
-.sec-title{
+.sec-title {
   margin-left: 20px;
   align-items: left;
 }
 
-
-.auto-container{
+.auto-container {
   padding-top: 10%;
 }
 
-
-li{
+li {
   font-size: medium;
   font-weight: 600;
-  
 }
-
-
 
 .button {
   background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
