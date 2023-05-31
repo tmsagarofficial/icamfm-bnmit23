@@ -452,7 +452,7 @@ p {
 }
 
 .footer-distributed .footer-company-name {
-  color: #222;
+  color: #ffffff;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -579,7 +579,7 @@ p {
     margin-left: 0;
   }
   .placing {
-    width: 256px;
+    width: 225px;
   }
   .footer-center {
     width: 20px;
@@ -652,7 +652,7 @@ p {
     position: relative;
     left: 0px;
     top: 90px;
-    width: 416px;
+    width: 390px;
   }
 }
 
