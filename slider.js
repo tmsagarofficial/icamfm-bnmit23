@@ -56,3 +56,29 @@ for (var k = 0; k < images.length; k++) {
 
 showImage(currentImageIndex);
 startSlideshow();
+
+//time-clock
+// Set the countdown date (replace with your desired end date)
+const countdownDate = new Date("2023-09-11T00:00:00Z");
+
+// Update the countdown every second
+setInterval(updateCountdown, 1000);
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = countdownDate - now;
+
+  // Calculate days, hours, minutes, and seconds
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Update the HTML elements with the new values
+  document.getElementById("days").textContent = days;
+  document.getElementById("hours").textContent = hours;
+  document.getElementById("minutes").textContent = minutes;
+  document.getElementById("seconds").textContent = seconds;
+}

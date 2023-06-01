@@ -62,6 +62,34 @@
   background-color: #fff;
 }
 
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+}
+
+.countdown-item {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.countdown-item span {
+  display: block;
+}
+
+.countdown-item span:first-child {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.countdown-item span:last-child {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999;
+}
+
 /* Responsive Styles for Mobile */
 @media (max-width: 768px) {
   .slider {
@@ -71,6 +99,22 @@
     width: 100%;
     height: 264px;
     display: block;
+  }
+  .countdown {
+    font-size: 18px;
+  }
+
+  .countdown-item span:first-child {
+    font-size: 36px;
+  }
+
+  .countdown-item span:last-child {
+    font-size: 12px;
+  }
+
+  .time-clock {
+    position: relative;
+    top: 100px;
   }
 }
 
