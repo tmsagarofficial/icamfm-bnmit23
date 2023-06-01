@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <title>ICAMFM BNMIT</title>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/slider.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -34,16 +35,22 @@
             <li><a href="#Speakers">Home</a></li>
             <li><a href="#Commitee">Commitee</a></li>
             <li><a href="#">Dates</a></li>
-            <li><a href="call-for-papers.html">Submission</a></li>
+            <li>
+              <a href="call-for-papers.html" class="link">Submission</a>
+            </li>
+            <div class="progress-bar"></div>
             <li><a href="#">Programs</a></li>
           </div>
         </div>
       </header>
-      <div class="image-container">
-        <img
-          src="https://images.shiksha.com/mediadata/images/1623650328phpcX66p5.jpeg"
-          alt="Your Image"
-        />
+      <div class="slider">
+        <img src="images/slider images/home_1.png" alt="Image 1" />
+        <img src="images/slider images/home_2_3.jpg" alt="Image 2" />
+        <img src="images/slider images/home_6_6.jpg" alt="Image 3" />
+        <div class="slider__marks"></div>
+        <button class="slider__prev" onclick="prevImage()">&#8249;</button>
+        <button class="slider__next" onclick="nextImage()">&#8250;</button>
+      </div>
       </div>
     </section>
 
@@ -56,7 +63,7 @@
 
     <section class="Speakers" id="Speakers">
       <div class="Speakers-text"><h1>SPEAKERS</h1></div>
-      <div class="slider">
+      <div class="slider1">
         <button id="prev" class="btn">
           <i class="las la-angle-left"><</i>
         </button>
@@ -210,5 +217,9 @@
       </div>
     </footer>
     <script src="index.js"></script>
+    <script src="slider.js"></script>
+    <!-- <script src="loadbar.js"></script> -->
+    <!-- 
+    <script src="loadbar.js"></script> -->
   </body>
 </html>

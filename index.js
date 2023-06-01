@@ -1,7 +1,7 @@
 //header to change to different color
 window.addEventListener("load", function () {
   window.addEventListener("scroll", function () {
-    if (window.pageYOffset > 500) {
+    if (window.pageYOffset > 0) {
       document.querySelector(".header").classList.add("active");
     } else {
       document.querySelector(".header").classList.remove("active");
@@ -31,5 +31,3 @@ function handleScrollPrev(direction) {
 
 next.addEventListener("click", handleScrollNext);
 prev.addEventListener("click", handleScrollPrev);
-
-
