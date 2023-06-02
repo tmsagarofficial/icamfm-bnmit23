@@ -1,33 +1,44 @@
-//header to change to different color
+// Change header color on scroll
 window.addEventListener("load", function () {
   window.addEventListener("scroll", function () {
+    var header = document.querySelector(".header");
     if (window.pageYOffset > 0) {
-      document.querySelector(".header").classList.add("active");
+      header.classList.add("active");
     } else {
-      document.querySelector(".header").classList.remove("active");
+      header.classList.remove("active");
     }
   });
 });
 
-//cards
-const next = document.querySelector("#next");
-const prev = document.querySelector("#prev");
+// Cards
+var next = document.querySelector("#next");
+var prev = document.querySelector("#prev");
 
-function handleScrollNext(direction) {
-  const cards = document.querySelector(".card-content");
-  cards.scrollLeft = cards.scrollLeft +=
-    window.innerWidth / 2 > 600
-      ? window.innerWidth / 2
-      : window.innerWidth - 100;
+function handleScrollNext() {
+  var cards = document.querySelector(".card-content");
+  cards.scrollLeft +=
+    window.innerWidth > 600 ? window.innerWidth / 2 : window.innerWidth - 100;
 }
 
-function handleScrollPrev(direction) {
-  const cards = document.querySelector(".card-content");
-  cards.scrollLeft = cards.scrollLeft -=
-    window.innerWidth / 2 > 600
-      ? window.innerWidth / 2
-      : window.innerWidth - 100;
+function handleScrollPrev() {
+  var cards = document.querySelector(".card-content");
+  cards.scrollLeft -=
+    window.innerWidth > 600 ? window.innerWidth / 2 : window.innerWidth - 100;
 }
 
 next.addEventListener("click", handleScrollNext);
 prev.addEventListener("click", handleScrollPrev);
+
+// Loadbar
+// Loadbar
+window.addEventListener("load", function () {
+  var preloader = document.getElementById("preloader");
+  preloader.style.opacity = 1;
+
+  setTimeout(function () {
+    preloader.style.opacity = 0;
+    setTimeout(function () {
+      preloader.style.display = "none";
+    }, 500); // Adjust the delay as needed
+  }, 2000); // Adjust the delay as needed
+});
